@@ -1,0 +1,235 @@
+.header {
+    padding: 0 1rem;
+    background: rgba(0, 0, 0, 0.918);
+    width: 100%;
+    position: relative;
+}
+
+.header__wrapper {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header__logo-img {
+    height: 35px;
+    width: 35px;
+}
+
+.header__logo-name {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.header__logo-name span {
+    color: var(--red-color);
+}
+
+.header__nav-links-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.fa-xmark {
+    display: none;
+}
+
+.header__login-button {
+    padding: 0.4em 1.3em;
+    background: var(--red-color);
+    font-size: 0.9rem;
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header__login-button:hover {
+    border: 1px solid var(--red-color);
+    background: none;
+}
+
+.header__controls-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header__icon {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.header__profile-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+    position: relative;
+}
+
+.fa-caret-down {
+    font-size: 1rem;
+}
+
+.header__profile-dropdown {
+    position: absolute;
+    top: 2rem;
+    background: white;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    right: 0;
+    z-index: 998;
+}
+
+.header__profile-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.header__profile-logout {
+    background: var(--red-color);
+    outline: none;
+    font-size: 0.9rem;
+    padding: 0.5em 1.5em;
+    font-weight: 600;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header__profile-logout:hover {
+    background: none;
+    border: 1px solid var(--red-color);
+    color: black;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.hide-element {
+    display: none;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .header__nav-links-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        padding: 3rem 1rem;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background: rgb(32, 32, 32);
+        height: 100vh;
+        z-index: 999;
+        transform: translateX(300px);
+        transition: all 0.3s ease;
+    }
+
+    .header__nav-links-wrapper-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        padding: 3rem 1rem;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background: rgb(32, 32, 32);
+        height: 100vh;
+        z-index: 999;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
+
+    .fa-xmark {
+        display: block;
+    }
+
+    .fa-bars {
+        display: block;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .header__nav-links-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        padding: 3rem 1rem;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background: rgb(32, 32, 32);
+        height: 100vh;
+        z-index: 999;
+        transform: translateX(300px);
+        transition: all 0.3s ease;
+    }
+
+    .header__nav-links-wrapper-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        padding: 3rem 1rem;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background: rgb(32, 32, 32);
+        height: 100vh;
+        z-index: 999;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
+    .fa-xmark {
+        display: block;
+    }
+
+    .fa-bars {
+        display: block;
+        margin-left: 15px;
+    }
+}

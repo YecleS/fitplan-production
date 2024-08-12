@@ -1,0 +1,133 @@
+.dialog-component__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dialog-component__field-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.schedule-wrapper {
+    margin-bottom: 20px;
+}
+
+.dialog-component__title {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.dialog-component__title span{
+    font-size: 0.8rem;
+}
+
+.dialog-component__checkbox-label {
+    display: flex;
+    gap: 5px;
+    font-size: 0.9rem;
+    font-size: 400;
+}
+
+.dialog-component__input {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    outline: none;
+    width: 300px;
+}
+
+.dialog-component__error {
+    font-size: 0.9rem;
+    color: var(--red-color);
+    position: absolute;
+    left: 2px;
+    bottom: -20px;
+}
+
+.dialog-component__time-field-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.time-title {
+    margin-bottom: 20px;
+}
+
+.time-field {
+    width: 55px;
+}
+
+.dialog-component-label-mins {
+    font-size: 0.85rem;
+    top: -18px;
+    left: 0;
+    position: absolute;
+}
+
+.dialog-component-label-secs {
+    font-size: 0.85rem;
+    top: -18px;
+    left: 70px;
+    position: absolute;
+}
+
+.dialog-component__submit {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    background: var(--red-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dialog-component__submit:hover {
+    border: 1px solid var(--red-color);
+    background: none;
+    color: black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+}
+
+
+@media screen and (max-width: 599px) {
+    .time-title {
+        margin-bottom: 1rem;
+    }
+
+    .dialog-component__input {
+        width: 230px;
+    }
+
+    .time-field {
+        width: 55px;
+    }
+
+    .dialog-component__submit {
+        font-size: 0.9rem;
+    }
+}

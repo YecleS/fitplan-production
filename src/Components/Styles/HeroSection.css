@@ -1,0 +1,119 @@
+.hero-section {
+    position: relative;
+    min-height: 95svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../Assets/hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0rem 1rem;
+}
+
+.hero-section__wrapper {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-section__hero-title {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.hero-section__hero-title span {
+    color: var(--red-color);
+}
+
+.hero-section__hero-subtitle {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+.hero-section__hero-button {
+    margin-top: 20px;
+}
+
+.hero-section__hero-img {
+    height: auto;
+    width: 450px;
+    object-fit: contain;
+}
+
+.hero-section__devider-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 769px) and (max-width: 999px) {
+    .hero-section__hero-img {
+        height: auto;
+        width: 400px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .hero-section {
+        min-height: 100svh;
+    }
+
+    .hero-section__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-section__hero-subtitle {
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .hero-section__hero-img {
+        height: auto;
+        width: 400px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .hero-section {
+        min-height: 100svh;
+    }
+
+    .hero-section__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-section__hero-title {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .hero-section__hero-subtitle {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    .hero-section__hero-img {
+        height: auto;
+        width: 90%;
+        object-fit: contain;
+    }
+}

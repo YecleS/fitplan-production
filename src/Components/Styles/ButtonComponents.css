@@ -1,0 +1,32 @@
+.button-components__button {
+    color: white;
+    background: var(--red-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4em 1.5em;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-components__button:hover {
+    transform: scale(1.05);
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .button-components__button {
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 599px) {
+    .button-components__button {
+        font-size: 0.9rem;
+    }
+}

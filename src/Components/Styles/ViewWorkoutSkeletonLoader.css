@@ -1,0 +1,27 @@
+.view-workout-skeleton-loader {
+    margin-inline: auto;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 50px;
+}
+
+.view-workout-skeleton-loader__video-wrapper {
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    background: gray;
+}
+
+.view-workout-skeleton-loader__details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.view-workout-skeleton-loader__details {
+    background: grey;
+    height: 20px;
+    width: 100%;
+    border-radius: 20px;
+}

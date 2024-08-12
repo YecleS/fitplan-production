@@ -1,0 +1,90 @@
+.view-workout-page {
+    min-height: 90vh;
+    padding: 5rem 1rem;
+}
+
+.view-workout-page__wrapper {
+    margin-inline: auto;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 50px;
+}
+
+.view-workout-page__video-wrapper {
+    border-radius: 10px
+}
+
+
+.view-workout-page__video {
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.view-workout-page__details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.view-workout-page__details-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.view-workout-page__description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.view-workout-page__details {
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.view-workout-page__add-to-routine {
+    margin-top: 10px;
+    padding: 0.5em 1em;
+}
+
+.view-workout-page__view-more {
+    padding: 0.5em 1em;
+}
+
+.view-workout-page__dialog {
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    border: none;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .view-workout-page__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .view-workout-page__description {
+        font-size: 0.95rem;
+    }
+    
+    .view-workout-page__details {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    .view-workout-page__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .view-workout-page__description {
+        font-size: 0.95rem;
+    }
+    
+    .view-workout-page__details {
+        font-size: 0.9rem;
+    }
+}

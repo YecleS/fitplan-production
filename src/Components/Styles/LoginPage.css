@@ -1,0 +1,136 @@
+.login-page {
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(73, 73, 73) 20%, rgb(27, 27, 27) 70%);
+    padding: 0 1rem;
+}
+
+.login-page__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.login-page__field-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page__input {
+    font-size: 0.9rem;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    width: 80%;
+    transition: all 0.3s ease;
+}
+
+.login-page__input:focus {
+    box-shadow: 0 0 0 3px rgba(173, 12, 12, 0.425);
+}
+
+.login-page__eye-icon {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-page__eye-icon:hover {
+    transform: scale(1.05);
+}
+
+.login-page__eye-icon-active {
+    color: var(--red-color);
+}
+
+.login-page__submit {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4em 1em;
+    border: 1px solid transparent;
+    background: var(--red-color);
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-page__submit:focus {
+    box-shadow: 0 0 0 3px rgba(173, 12, 12, 0.425);
+}
+
+.login-page__submit:hover {
+    transform: scale(1.05);
+}
+
+.login-page__signup-link {
+    text-decoration: none;
+}
+
+.login-page__signup {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+.login-page__dialog {
+    padding: 1.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .login-page__input {
+        width: 100%;
+    }
+
+    .login-page__eye-icon {
+        right: 10px;
+    }
+
+    .login-page__submit {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .login-page__signup {
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 599px) {
+    .login-page__input {
+        width: 100%;
+    }
+
+    .login-page__eye-icon {
+        right: 10px;
+    }
+
+    .login-page__submit {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .login-page__signup {
+        font-size: 0.8rem;
+    }
+    
+}

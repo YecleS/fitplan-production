@@ -1,0 +1,33 @@
+.icon-component {
+    display: flex;
+    align-items: center;
+}
+
+.icon-component__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: var(--red-color);
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.icon-component__icon {
+    color: white;
+}
+
+.icon-component__description-wrapper {
+    line-height: 18px;
+}
+
+.icon-component__description-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.icon-component__description {
+    font-size: 0.9rem;
+    font-weight: 300;
+}

@@ -1,0 +1,154 @@
+.my-routines-page {
+    min-height: 90vh;
+    padding: 5rem 1rem;
+}
+
+.my-routines-page__wrapper {
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.my-routines-page__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-routines-page__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.my-routines-page__filter {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.4em 1em;
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.my-routines-page__body {
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.my-routines-page__table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.my-routines-page__table-th {
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgb(59, 56, 56);
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.my-routines-page__table-th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.my-routines-page__table-th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.my-routines-page__tbody-td {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5em 1em;
+}
+
+.my-routines-page__table-tbody-tr:nth-child(even) {
+    background: rgb(224, 224, 224);
+}
+
+.my-routines-page__icon-td {
+    font-size: 1.3rem;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.my-routines-page__icon-td:hover {
+    color: var(--red-color);
+}
+
+.fa-pen-to-square {
+    margin-right: 5px;
+}
+
+.my-routines-page__confirmation-dialog {
+    border: none;
+    border-radius: 5px;
+}
+
+.my-routines-page__confirmation__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-routines-page__confirmation-button-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.my-routines-page__confirmation-button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    background: var(--red-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.my-routines-page__confirmation-button:hover {
+    transform: scale(1.05);
+}
+
+.my-routines-page__dialog {
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    border: none;
+}
+
+/* STYLE FOR SKELETON LOADER */
+.my-routines-page__skeleton-loader-td {
+    background: grey;
+    height: 20px;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 20px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* KEYFRAMES */
+@keyframes pulse {
+    0% {
+      background-color: #e0e0e0; /* Start color */
+    }
+    50% {
+      background-color: #f5f5f5; /* Color during pulse */
+    }
+    100% {
+      background-color: #e0e0e0; /* End color */
+    }
+  }
+
+
+/* MEDIA QURIES */
+
+@media screen and (max-width: 599px) {
+    .my-routines-page__filter {
+        width: 150px;
+    }
+}

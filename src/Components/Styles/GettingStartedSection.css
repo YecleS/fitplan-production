@@ -1,0 +1,36 @@
+.getting-started-section__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.getting-started-section__dialog {
+    padding: 2rem 2rem;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.getting-started-section__dialog-button {
+    margin-top: 30px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .getting-started-section__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+    .getting-started-section__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .getting-started-section__body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

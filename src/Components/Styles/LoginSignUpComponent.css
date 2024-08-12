@@ -1,0 +1,121 @@
+.login-signup {
+    max-width: 1000px;
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem;
+}
+
+.login-signup__img-wrapper {
+    clip-path: polygon(0.5px calc(100% - 16px), 0.5px 16px, 0.5px 16px, 0.69632471px 13.56692239px, 1.26471008px 11.25884032px, 2.17427297px 9.10663693px, 3.39413024px 7.14119536px, 4.89339875px 5.39339875px, 6.64119536px 3.89413024px, 8.60663693px 2.67427297px, 10.75884032px 1.76471008px, 13.06692239px 1.19632471px, 15.5px 1px, calc(100% - 16.006px) 1px, calc(100% - 16.006px) 1px, calc(100% - 13.465641px) 1.21372134px, calc(100% - 11.067248px) 1.83088832px, calc(100% - 8.8445469999999px) 2.81550538px, calc(100% - 6.8312639999999px) 4.13157696px, calc(100% - 5.0611249999999px) 5.7431075px, calc(100% - 3.567856px) 7.61410144px, calc(100% - 2.385183px) 9.70856322px, calc(100% - 1.546832px) 11.99049728px, calc(100% - 1.086529px) 14.42390806px, calc(100% - 1.0380000000001px) 16.9728px, calc(100% - 48.088px) calc(100% - 15.027px), calc(100% - 48.088px) calc(100% - 15.027px), calc(100% - 48.418302px) calc(100% - 12.716974px), calc(100% - 49.082696px) calc(100% - 10.538432px), calc(100% - 50.053114px) calc(100% - 8.517678px), calc(100% - 51.301488px) calc(100% - 6.6810159999999px), calc(100% - 52.79975px) calc(100% - 5.05475px), calc(100% - 54.519832px) calc(100% - 3.6651839999998px), calc(100% - 56.433666px) calc(100% - 2.538622px), calc(100% - 58.513184px) calc(100% - 1.701368px), calc(100% - 60.730318px) calc(100% - 1.1797260000001px), calc(100% - 63.057px) calc(100% - 1.0000000000001px), 15.5px calc(100% - 1px), 15.5px calc(100% - 1px), 13.06692239px calc(100% - 1.1963319999999px), 10.75884032px calc(100% - 1.7647359999997px), 8.60663693px calc(100% - 2.674324px), 6.64119536px calc(100% - 3.894208px), 4.89339875px calc(100% - 5.3935px), 3.39413024px calc(100% - 7.141312px), 2.17427297px calc(100% - 9.106756px), 1.26471008px calc(100% - 11.258944px), 0.69632471px calc(100% - 13.566988px), 0.5px calc(100% - 16px));
+    position: relative;
+}
+
+.login-signup__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.login-signup__img-header {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-signup__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-signup__logo {
+    height: 30px;
+    width: 30px;
+}
+
+.login-signup__logo-name {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.login-signup__logo-name span {
+    color: rgb(194, 10, 10);
+}
+
+.login-signup__navigation-button {
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-signup__navigation-button:hover {
+    background: rgb(194, 10, 10);
+    border: 1px solid transparent;
+}
+
+.login-signup__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-signup__form-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-signup__form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .login-signup {
+        padding: 2rem 2rem;
+    }
+
+    .login-signup__img-wrapper {
+        display: none;
+    }
+
+    .login-signup {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .login-signup {
+        padding: 2rem 1.5rem;
+    }
+
+    .login-signup__img-wrapper {
+        display: none;
+    }
+
+    .login-signup {
+        grid-template-columns: 1fr;
+    }
+
+    .login-signup__form-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}

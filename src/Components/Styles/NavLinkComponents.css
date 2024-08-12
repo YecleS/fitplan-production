@@ -1,0 +1,27 @@
+.nav-link-components__link {
+    text-decoration: none;
+}
+
+.nav-link-components__label {
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.nav-link-components__label::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    right: 50;
+    transform: translate(-50%, -50%);
+    background: var(--red-color);
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-link-components__label:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,58 @@
+.catalog-card-component__link {
+    text-decoration: none;
+}
+
+.catalog-card-component__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.catalog-card-component__card:hover .catalog-card-component__card-img {
+    transform: scale(1.1);
+}
+
+.catalog-card-component__card-header {
+    overflow: hidden;
+}
+
+.catalog-card-component__card-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.catalog-card-component__card-body {
+    margin-top: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-card-component__card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.catalog-card-component__card-description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+    color: black;
+    
+}
+
+.catalog-card-component__card-difficulty {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 20px;
+    color: black;
+    
+}

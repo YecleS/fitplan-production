@@ -1,0 +1,143 @@
+.sign-up-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(73, 73, 73) 20%, rgb(27, 27, 27) 70%);
+    padding: 0 1rem;
+}
+
+.sign-up-page__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
+}
+
+.sign-up-page__field-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.sign-up-page__input {
+    font-size: 0.9rem;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    width: 80%;
+    transition: all 0.3s ease;
+}
+
+.sign-up-page__input:focus {
+    box-shadow: 0 0 0 3px rgba(173, 12, 12, 0.425);
+}
+
+.sign-up-page__eye-icon {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign-up-page__eye-icon:hover {
+    transform: scale(1.05);
+}
+
+.sign-up-page__eye-icon-active {
+    color: var(--red-color);
+}
+
+.sign-up-page__error-message {
+    color: var(--red-color);
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -25px;
+    left: 50px;
+}
+
+.sign-up-page__signup {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4em 1em;
+    border: 1px solid transparent;
+    background: var(--red-color);
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign-up-page__signup:hover {
+    transform: scale(1.05);
+}
+
+.sign-up-page__login-link {
+    text-decoration: none;
+}
+
+.sign-up-page__login {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+.sign-up-page__dialog {
+    border: none;
+    border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .sign-up-page__input {
+        width: 100%;
+    }
+
+    .sign-up-page__eye-icon {
+        right: 10px;
+    }
+
+    .sign-up-page__signup {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .sign-up-page__login {
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 599px) {
+    .sign-up-page {
+        height: 110vh;
+    }
+
+    .sign-up-page__input {
+        width: 100%;
+    }
+
+    .sign-up-page__eye-icon {
+        right: 10px;
+    }
+
+    .sign-up-page__signup {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .sign-up-page__login {
+        font-size: 0.8rem;
+    }
+    
+}
